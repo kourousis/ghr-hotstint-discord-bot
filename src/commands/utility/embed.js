@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-const { EmbedBuilder } = require("discord.js");
+const downloadAndReadSessionResultsJson = require("../../../ftp/modules/qualiFilesDownload");
 
 const exampleEmbed = {
   color: 0x0099ff,
@@ -69,7 +69,8 @@ module.exports = {
     .setName("embed")
     .setDescription("Posts or edits a simple embed"),
   async execute(interaction) {
-    // If a message has already been sent, edit the existing message with a new embed
+    downloadAndReadSessionResultsJson();
+
     await interaction.reply({ embeds: [exampleEmbed] });
   },
 };
