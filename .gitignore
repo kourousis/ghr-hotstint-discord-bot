@@ -2,4 +2,3 @@ node_modules
 config.json
 ftp/data/results/**.json
 ftp/modules/storageLogs/**.json
-d
