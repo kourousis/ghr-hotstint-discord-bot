@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const RESULT_DIRECTORY = "ftp/data/results";
-const MAX_FILES_TO_KEEP = 50;
+const MAX_FILES_TO_KEEP = 20;
 const LOGS_DIRECTORY = "storageLogs"; // Add this constant for the logs directory
 const DOWNLOADED_FILES_PATH = path.join(
   __dirname,
