@@ -66,7 +66,7 @@ const exampleEmbed = {
 module.exports = {
   category: "utility",
   data: new SlashCommandBuilder()
-    .setName("embed")
+    .setName("hotstint")
     .setDescription("Posts or edits a simple embed"),
   async execute(interaction) {
     downloadAndReadSessionResultsJson();
